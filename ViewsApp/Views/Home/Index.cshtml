@@ -1,0 +1,51 @@
+﻿<h1>Hello Home Page</h1>
+
+@{
+  var stdName = "Faizan Sheikh";
+  var status = false;
+}
+
+    </h2>Student name is @stdName...</h2> 
+
+    <hr/>
+
+    <h2>Today date is @DateTime.Now</h2>
+
+     <hr/>
+
+
+     @if(status){
+        <h3>Status is true</h3>
+     }
+     else{
+          <h3>Status is false</h3>
+     }
+
+     <hr/>
+
+     @{
+         string[] stds = {"Faizan","Majid","Rashid","Arsalan"};
+     }
+
+     <ol>
+     @foreach(var item in stds)
+     {
+         <li>@item</li>
+     }
+       </ol>
+
+     <hr/>
+
+     @for(int i = 0; i <= 10; i++)
+     {
+       <h2>@i</h2>
+     }
+
+     <hr/>
+
+     @{
+         var fname = "Faizan";
+         var lname = "Sheikh";
+     }
+
+      <h2>@fname @lname</h2>
