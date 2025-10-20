@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <a asp-controller="Home" asp-action="Index">Home</a>  |
+    <a asp-controller="Home" asp-action="About">About</a>  |
+    <a asp-controller="Home" asp-action="Contact">Contact</a> |
+    <a asp-controller="Home" asp-action="FormSubmit">FormSubmit</a>
+
+  
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <center> All Right Reserved By FATIMA </center>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@{
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>About</h1>
+
+<h1>ViewBack</h1>
+
+<p>@ViewBag.details</p>
+
+<hr />
+
+<ol>
+@foreach (var std in ViewBag.stds)
+{
+    <li>@std</li>
+}
+</ol>
+
+<h1>Contact</h1>
+
+<hr />
+@* 
+<h1>Address</h1>
+<li>City is : @TempData["city"]</li>
+<li>Phone is :@TempData["phone"]</li> *@

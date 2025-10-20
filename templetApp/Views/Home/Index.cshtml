@@ -1,0 +1,29 @@
+﻿
+@{
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+
+    // object convert into array or string
+    string[] fruit = @ViewData["fruitList"] as string[];   // Type casting
+
+}
+<h1>Data Sharing</h1>
+
+<h1>ViewData</h1>
+
+<h2>Message:   @ViewData["name"]</h2>
+
+<hr/>
+
+<h3>Today Date&Time; is @ViewData["date"]</h3>
+
+<hr />
+
+<h2>FruitList</h2>
+
+<ol>
+@foreach (var fru in fruit)
+{
+    <li>@fru</li>
+}
+</ol>
+
